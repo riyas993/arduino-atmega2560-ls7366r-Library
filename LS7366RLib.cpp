@@ -63,7 +63,7 @@ LS7366R::LS7366R(int SelectSlave)
 
 	digitalWrite(SS, LOW);
 	SPI.transfer(WR_MDR1);
-	SPI.transfer(ENABLE_CNT);
+	SPI.transfer(DISABLE_CNT);
 	digitalWrite(SS, HIGH);
 
 }
